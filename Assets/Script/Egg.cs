@@ -25,18 +25,12 @@ public class Egg : MonoBehaviour
         if(transform.position.y < -5.0f){
             Destroy(this.gameObject);
         }
-
     }
 
     public void Touch()
     {
-        //this.GetComponent<Image>().sprite = HiyokoEgg;
         StartCoroutine(Matteru());
-        //this.GetComponent<Image>().sprite = Hiyoko;
 		audioSource.PlayOneShot(sound1);
-
-        //Destroy (this.gameObject);
-
     }
 
 	IEnumerator Matteru() 
