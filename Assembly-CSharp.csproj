@@ -59,17 +59,19 @@
     <UnityVersion>2020.1.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\AriC.cs" />
     <Compile Include="Assets\Script\EggGenerator.cs" />
+    <Compile Include="Assets\Script\ToTop.cs" />
     <Compile Include="Assets\Script\CookieGenerator.cs" />
+    <Compile Include="Assets\Script\ToAri.cs" />
+    <Compile Include="Assets\Script\AriB.cs" />
     <Compile Include="Assets\Script\Cookie.cs" />
+    <Compile Include="Assets\Script\AriD.cs" />
     <Compile Include="Assets\Script\Egg.cs" />
     <Compile Include="Assets\Script\Ari.cs" />
-    <Compile Include="Assets\Script\AriB.cs" />
-    <Compile Include="Assets\Script\AriC.cs" />
-    <Compile Include="Assets\Script\AriD.cs" />
-    <Compile Include="Assets\Script\ToTop.cs" />
     <Compile Include="Assets\Script\ToEgg.cs" />
-    <Compile Include="Assets\Script\ToAri.cs" />
+    <Compile Include="Assets\Script\Usagi.cs" />
+    <Compile Include="Assets\Script\ToUsagi.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
