@@ -945,7 +945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 5865611675502017018, guid: 36082d7114208cb408671b2647aa4a97, type: 3}
   canvas: {fileID: 1043388405}
-  sound1: {fileID: 8300000, guid: 4e83d7faaabb76c48a434056fab31569, type: 3}
+  sound1: {fileID: 8300000, guid: 465515671444e2249bf59127b20c7c0c, type: 3}
 --- !u!4 &361091638
 Transform:
   m_ObjectHideFlags: 0
