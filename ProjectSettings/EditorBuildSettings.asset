@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Okiagari.unity
     guid: 36da9750c3b16d54699fa47772f387d2
+  - enabled: 1
+    path: Assets/Scenes/ochiba.unity
+    guid: c2f55ca9e916ebd41a3979cc6191e4dc
   m_configObjects: {}

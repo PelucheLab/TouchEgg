@@ -15,7 +15,7 @@ public class Usagi : MonoBehaviour
     public void touch_right(){
         audioSource.PlayOneShot(sound1);
         Rigidbody2D rig = transform.GetChild(0).gameObject.GetComponent<Rigidbody2D>();
-        rig.AddForce(Vector2.left * 200);
+        rig.AddForce(Vector2.left * 300);
 
 
 
@@ -23,7 +23,7 @@ public class Usagi : MonoBehaviour
     public void touch_left(){
         audioSource.PlayOneShot(sound1);
         Rigidbody2D rig = transform.GetChild(0).gameObject.GetComponent<Rigidbody2D>();
-        rig.AddForce(Vector2.right * 200);
+        rig.AddForce(Vector2.right * 300);
 
 
     }
