@@ -60,9 +60,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\AriC.cs" />
+    <Compile Include="Assets\Script\Hun.cs" />
     <Compile Include="Assets\Script\EggGenerator.cs" />
     <Compile Include="Assets\Script\ToTop.cs" />
     <Compile Include="Assets\Script\CookieGenerator.cs" />
+    <Compile Include="Assets\Script\ToOchiba.cs" />
+    <Compile Include="Assets\Script\HunCounter.cs" />
     <Compile Include="Assets\Script\musi2.cs" />
     <Compile Include="Assets\Script\ToAri.cs" />
     <Compile Include="Assets\Script\Usagi.cs" />
@@ -75,7 +78,10 @@
     <Compile Include="Assets\Script\Ari.cs" />
     <Compile Include="Assets\Script\ToEgg.cs" />
     <Compile Include="Assets\Script\musi1.cs" />
-    <Compile Include="Assets\Script\ToOchiba.cs" />
+    <Compile Include="Assets\Script\GameData.cs" />
+    <Compile Include="Assets\Script\LevelUp.cs" />
+    <Compile Include="Assets\Script\StopAnimation.cs" />
+    <Compile Include="Assets\Script\LevelUpDialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

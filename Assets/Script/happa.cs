@@ -8,10 +8,17 @@ public class happa : MonoBehaviour
 {
     Animator animator;
     GameObject clickedGameObject;
+    float width;
+    float height;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        width = Screen.width;
+        height = Screen.height;
+        Debug.Log("width=" + width);
+        Debug.Log("heigth=" + height);
+      
     }
 
     void Update () {
@@ -24,7 +31,6 @@ public class happa : MonoBehaviour
             if (hit2d) {
                 clickedGameObject = hit2d.transform.gameObject;
                 if(clickedGameObject == this.gameObject){
-                    Debug.Log("clicked"+clickedGameObject);
                     animator.SetBool("touch", true);
                     GetComponent<RectTransform>().SetAsLastSibling();
 
@@ -41,9 +47,21 @@ public class happa : MonoBehaviour
         if( r == 1 ){
             pos.x = pos.x + 200;
             pos.y = pos.y + -200;
+            if(pos.x >= width/2){
+                pos.x = pos.x - 300;
+            }
+            if(pos.y <= -height/2){
+                pos.y = pos.y + 300;
+            }
         }else{
-            pos.x = pos.x + -200;
+            pos.x = pos.x - 200;
             pos.y = pos.y + 200;
+            if(pos.x <= -width/2){
+                pos.x = pos.x + 300;
+            }
+            if(pos.y >= height/2){
+                pos.y = pos.y - 300;
+            }
         }
         GetComponent<RectTransform>().anchoredPosition = new Vector2(pos.x, pos.y);
         FindObjectOfType<musi1>().hiding(this.gameObject.name, pos.x, pos.y);
