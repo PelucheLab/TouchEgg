@@ -32,9 +32,8 @@ public class musi2 : MonoBehaviour
             RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRectTrans, transform.position, null, out Vector2 localPoint);
             hun.transform.localPosition = localPoint;
             Rigidbody2D rig = hun.GetComponent<Rigidbody2D>();
-            int px = Random.Range(-2, 3);
-            rig.AddForce(Vector2.right * 50);
-            rig.AddTorque(50.0f*px);
+            rig.AddForce(Vector2.right * 5);
+            rig.AddTorque(3.0f, ForceMode2D.Impulse);
 
             Vector2 pos = new Vector2(x, y);
             Vector2 diff = (pos - GetComponent<RectTransform>().anchoredPosition);
