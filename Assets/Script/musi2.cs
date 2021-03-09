@@ -21,6 +21,7 @@ public class musi2 : MonoBehaviour
 
     public void hiding(string happa, float x, float y){
         if(happa == pair[this.gameObject.name]){
+            FindObjectOfType<Itemgenerator>().Addkasanari(happa);
             Debug.Log("pos.x="+x);
             Debug.Log("pos.y="+y);
             animator.SetBool("musi_itween", true);
@@ -30,6 +31,10 @@ public class musi2 : MonoBehaviour
             parentRectTrans = (RectTransform) myRectTrans.parent;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRectTrans, transform.position, null, out Vector2 localPoint);
             hun.transform.localPosition = localPoint;
+            Rigidbody2D rig = hun.GetComponent<Rigidbody2D>();
+            int px = Random.Range(-2, 3);
+            rig.AddForce(Vector2.right * 50);
+            rig.AddTorque(50.0f*px);
 
             Vector2 pos = new Vector2(x, y);
             Vector2 diff = (pos - GetComponent<RectTransform>().anchoredPosition);

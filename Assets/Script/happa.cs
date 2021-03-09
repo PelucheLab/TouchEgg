@@ -68,4 +68,14 @@ public class happa : MonoBehaviour
         FindObjectOfType<musi2>().hiding(this.gameObject.name, pos.x, pos.y);
 
     }
+
+    public Vector2 ReturnPos(string happa){
+        Vector2 pos = new Vector2(0, 0);
+        Debug.Log("ReturnPos"+ transform.name);
+        if(transform.name == happa){
+            Debug.Log("一致"+ pos);
+            pos = GetComponent<RectTransform>().anchoredPosition;
+        }
+        return pos;
+    }
 }
