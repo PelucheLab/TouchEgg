@@ -34,7 +34,7 @@ public class Hun : MonoBehaviour
                 if(clickedGameObject == this.gameObject){
                     animator.SetBool("Get", true);
                     audioSource.PlayOneShot(sound1);
-                    FindObjectOfType<HunCounter>().CountUp();
+                    FindObjectOfType<HunBarCtr>().CountUp();
                     Debug.Log("clickedFun"+clickedGameObject);
                     Destroy (this.gameObject, lifetime);
 
