@@ -49,6 +49,7 @@ public class LevelUpDialog : MonoBehaviour
     public void ClickButton()
     {
         GameData.CurrentStage++;
+        FindObjectOfType<HunBarCtr>().Barzero();
         this.gameObject.SetActive (false);
 
     }
