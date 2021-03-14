@@ -8,7 +8,7 @@ public class LevelUp : MonoBehaviour
     Sprite CafeSprite1;
     Sprite CafeSprite2;
     public GameObject Dialog;
-
+    public Text Level;
 
     int stage = 1;
 
@@ -27,12 +27,16 @@ public class LevelUp : MonoBehaviour
 
     void Start()
     {
+        GameData.CurrentStage = 1;
+		Level.text = GameData.CurrentStage.ToString();
 
     }
 
     public void LevelUpMusi(){
         stage = GameData.CurrentStage;
         Debug.Log("Levelup_ahora" + stage);
+        GameData.CurrentStage++;
+        Level.text = GameData.CurrentStage.ToString();
         Dialog.SetActive (true);
 
         FindObjectOfType<StopAnimation>().StopAnime();

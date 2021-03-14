@@ -18,7 +18,7 @@ public class HunBarCtr : MonoBehaviour
         Debug.Log("stage = "+ GameData.CurrentStage);
         TotalHun += 1;
         slider.value = TotalHun;
-        if(TotalHun >= 10){
+        if(TotalHun >= 5){
             TotalHun = 0;
             //LevelUp
             FindObjectOfType<LevelUp>().LevelUpMusi();
