@@ -43,7 +43,7 @@ public class happa : MonoBehaviour
         animator.SetBool("touch", false);
         Vector2 pos = GetComponent<RectTransform>().anchoredPosition;
         Debug.Log("pos="+pos);
-        int r = Random.Range (1, 3);
+        int r = Random.Range (1, 4);
         if( r == 1 ){
             pos.x = pos.x + 200;
             pos.y = pos.y + -200;
@@ -52,6 +52,15 @@ public class happa : MonoBehaviour
             }
             if(pos.y <= -height/2){
                 pos.y = pos.y + 300;
+            }
+        }else if(r == 2){
+            pos.x = pos.x + 200;
+            pos.y = pos.y + +200;
+            if(pos.x >= width/2){
+                pos.x = pos.x - 300;
+            }
+            if(pos.y <= -height/2){
+                pos.y = pos.y - 300;
             }
         }else{
             pos.x = pos.x - 200;
