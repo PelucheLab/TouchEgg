@@ -68,6 +68,7 @@
     <Compile Include="Assets\Script\StopAnimation.cs" />
     <Compile Include="Assets\Script\ToOchiba.cs" />
     <Compile Include="Assets\Script\Itemgenerator.cs" />
+    <Compile Include="Assets\Script\HunBarCtr.cs" />
     <Compile Include="Assets\Script\musi2.cs" />
     <Compile Include="Assets\Script\ToAri.cs" />
     <Compile Include="Assets\Script\item.cs" />
@@ -82,7 +83,7 @@
     <Compile Include="Assets\Script\GameData.cs" />
     <Compile Include="Assets\Script\ToEgg.cs" />
     <Compile Include="Assets\Script\musi1.cs" />
-    <Compile Include="Assets\Script\HunBarCtr.cs" />
+    <Compile Include="Assets\Script\ItemDialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

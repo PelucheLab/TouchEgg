@@ -127,3 +127,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0764c6552b79c0c40930956fb79db039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Dialog_N: {fileID: 4681450920039640659, guid: 07583a29bf7955f4b821e45d62c4ffb2, type: 3}
+  Dialog_L: {fileID: 3603579520883970206, guid: 7e136aa591b89bc439f99151550efacd, type: 3}

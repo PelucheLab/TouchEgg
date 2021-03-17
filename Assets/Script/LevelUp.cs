@@ -33,7 +33,6 @@ public class LevelUp : MonoBehaviour
     {
         GameData.CurrentStage = 1;
 		Level.text = GameData.CurrentStage.ToString();
-        width = Screen.width;
         height = Screen.height;
 
 

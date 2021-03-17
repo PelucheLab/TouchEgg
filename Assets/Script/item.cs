@@ -6,12 +6,15 @@ using UnityEngine.Rendering;
 
 public class item : MonoBehaviour
 {
+    float width;
+    float height;
     GameObject clickedGameObject;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        height = Screen.height;
     }
 
     // Update is called once per frame
@@ -26,6 +29,14 @@ public class item : MonoBehaviour
             if (hit2d) {
                 clickedGameObject = hit2d.transform.gameObject;
                 if(clickedGameObject == this.gameObject){
+                    
+                    if( height > 1100){
+                        FindObjectOfType<Itemgenerator>().SetActiveDialog(0);   
+                    }else{
+                        FindObjectOfType<Itemgenerator>().SetActiveDialog(1);   
+                    }
+
+                    FindObjectOfType<ItemDialog>().SetDialog(this.gameObject.name);
                     Destroy (this.gameObject);
 
                 }

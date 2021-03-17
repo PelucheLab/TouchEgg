@@ -13,6 +13,10 @@ public class Itemgenerator : MonoBehaviour
     public GameObject canvas;
     public GameObject canvas2;
     float countTime = 0;
+    int num = 0;
+    public GameObject Dialog_N;
+    public GameObject Dialog_L;
+
 
     // Start is called before the first frame update
     void Start()
@@ -64,17 +68,30 @@ public class Itemgenerator : MonoBehaviour
         }
 
 	}
+
     void GenerateItem(string TargetHappa){
         Debug.Log("GenerateItem" + TargetHappa);
 
         Vector2 pos = OiteiiListpos[TargetHappa];
-        int r = Random.Range(0,prefab.Length);
-        Debug.Log("r="+r);
-        GameObject Item = Instantiate(prefab[r], transform) as GameObject;
-        Item.transform.SetParent (canvas2.transform,false); 
-        myRectTrans = Item.GetComponent<RectTransform>();
-        parentRectTrans = (RectTransform) myRectTrans.parent;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRectTrans, pos, null, out Vector2 localPoint);
-        Item.transform.localPosition = localPoint;
+        int maxnum = prefab.Length;
+        Debug.Log("maxnum="+maxnum);
+        if(num < maxnum){
+            GameObject Item = Instantiate(prefab[num], transform) as GameObject;
+            Item.transform.SetParent (canvas2.transform,false); 
+            myRectTrans = Item.GetComponent<RectTransform>();
+            parentRectTrans = (RectTransform) myRectTrans.parent;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRectTrans, pos, null, out Vector2 localPoint);
+            Item.transform.localPosition = localPoint;
+            num++;
+        }
+    }
+
+    public void SetActiveDialog(int Dialogtype){
+        if(Dialogtype == 0){
+            Dialog_L.SetActive (true);
+        }else{
+            Dialog_N.SetActive (true);
+        }
+
     }
 }
