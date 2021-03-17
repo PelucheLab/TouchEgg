@@ -7,7 +7,11 @@ public class LevelUp : MonoBehaviour
 {
     Sprite CafeSprite1;
     Sprite CafeSprite2;
-    public GameObject Dialog;
+    float width;
+    float height;
+
+    public GameObject Dialog_N;
+    public GameObject Dialog_L;
     public Text Level;
 
     int stage = 1;
@@ -29,6 +33,9 @@ public class LevelUp : MonoBehaviour
     {
         GameData.CurrentStage = 1;
 		Level.text = GameData.CurrentStage.ToString();
+        width = Screen.width;
+        height = Screen.height;
+
 
     }
 
@@ -37,7 +44,11 @@ public class LevelUp : MonoBehaviour
         Debug.Log("Levelup_ahora" + stage);
         GameData.CurrentStage++;
         Level.text = GameData.CurrentStage.ToString();
-        Dialog.SetActive (true);
+        if( height > 1100){
+            Dialog_L.SetActive (true);
+        }else{
+            Dialog_N.SetActive (true);
+        }
 
         FindObjectOfType<StopAnimation>().StopAnime();
 		StartCoroutine("TimerCoroutine");	

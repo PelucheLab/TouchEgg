@@ -9,27 +9,27 @@ public class LevelUpDialog : MonoBehaviour
     Sprite CafeSprite;
     Dictionary<int, string> Target = new Dictionary<int, string>
     {
-        { 1, "musi1-2" },
-        { 2, "musi1-3" },
-        { 3, "musi1-4" },
-        { 4, "musi2-2" },
-        { 5, "musi2-3" },
-        { 6, "musi2-4" },
-        { 7, "musi2-5" },
-        { 8, "musi2-6" },
+        { 2, "musi1-2" },
+        { 3, "musi1-3" },
+        { 4, "musi1-4" },
+        { 5, "musi2-2" },
+        { 6, "musi2-3" },
+        { 7, "musi2-4" },
+        { 8, "musi2-5" },
+        { 9, "musi2-6" },
        
     };
 
     Dictionary<int, string> TargetName = new Dictionary<int, string>
     {
-        { 1, "レモンてんとうムシ" },
-        { 2, "オレンジてんとうムシ" },
-        { 3, "モモてんとうムシ" },
-        { 4, "キジリだんごムシ" },
-        { 5, "アカジリだんごムシ" },
-        { 6, "アオジリだんごムシ" },
-        { 7, "ミドリジリだんごムシ" },
-        { 8, "レインボーだんごムシ" },
+        { 2, "レモンてんとうムシ" },
+        { 3, "オレンジてんとうムシ" },
+        { 4, "モモてんとうムシ" },
+        { 5, "キジリだんごムシ" },
+        { 6, "アカジリだんごムシ" },
+        { 7, "アオジリだんごムシ" },
+        { 8, "ミドリジリだんごムシ" },
+        { 9, "レインボーだんごムシ" },
        
     };
 
